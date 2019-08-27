@@ -1,4 +1,4 @@
-let log = console.log;
+
 let canvas = document.getElementById('myCanvas');
 
 // Vẽ bảng
@@ -21,8 +21,8 @@ function Board() {
         if (isBouncingX && isBouncingY) {
             this.ball.dx = -(Math.random() * 2 + 6);
             this.ball.dy = -(Math.random() * 2 + 6);
-            log(this.ball.dx);
-            log(this.ball.dy);
+            console.log(this.ball.dx);
+            console.log(this.ball.dy);
             this.count++;
             document.getElementById("showScore").innerHTML = "Your Score = " + this.count;
         }
